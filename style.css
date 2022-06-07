@@ -1,0 +1,138 @@
+html{
+    font-family: Poppins-Regular, sans-serif;
+    background: linear-gradient(to bottom left, rgb(14,45,89), rgb(71,99,168),rgb(74,80,132)) no-repeat center center fixed;
+    background-size: cover;
+}
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 25px;
+    align-items: baseline;
+    align-content: space-around;
+}
+.buttoncont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 25px;
+    align-items: baseline;
+    align-content: space-around;
+    margin-bottom: 5px;
+}
+.card{
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    animation: popin 0.5s forwards;
+}
+.card:hover{
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform: scale(1.1); /*Le bouton s'agrandit*/
+}
+.coolbutton{
+    background-color: rgb(82, 163, 0);
+    color:white;
+}
+.coolbutton:active{
+    background-color: rgb(70, 138, 2);
+
+}
+.coolbutton:hover, .badbutton:hover{
+  cursor: pointer;
+}
+.badbutton{
+    background-color: rgb(163, 0, 0);
+    color:white;
+}
+.badbutton:active{
+    background-color: rgb(138, 2, 2);
+}
+.coolbutton, .badbutton, .error, .cameracontrols, .space, .card{
+  padding: 10px;
+  border-radius: 10px;
+  animation: popin 0.5s forwards;
+  border: none;
+  text-align: center;
+}
+
+#camera{
+    margin: auto;
+    width: 320px*2;
+    height: 240px*2;
+    animation: popin 0.5s forwards;
+}
+.error{
+    background-color: rgb(163, 0, 0);
+    color:white;
+    margin: 3px;
+    animation: danger 1s forwards;
+}
+.cameracontrols{
+    margin: auto 5px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    width: 60%;
+}
+#canvas, .download, .cameracontrols, .error, #camera{
+    display: block;
+}
+
+@keyframes popin {
+    /*L'animation pour faire apparaitre les trucs*/
+    0% {
+      opacity: 0%;
+      transform: scale(0.3);
+    }
+
+    100% {
+      opacity: 100%;
+      transform: scale(1)
+    }
+}
+@keyframes danger{
+  0% {
+      transform: scale(0.3);
+    }
+
+    35% {
+      
+      transform: scale(1.2)
+    }
+
+  80%{
+    transform: scale(0.9)
+  }
+  100%{
+    transform: scale(1)
+  }
+  
+}
+.space{
+    margin: auto 5px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    width: 60%;
+}
+.logo{
+  background-color:black;
+  padding: 15px;
+  border-radius:20px;
+  margin-bottom:5px;
+}
+#logocont{
+  display:flex;
+  justify-content:center;
+}
+.hidden{
+  
+display:none !important;
+}

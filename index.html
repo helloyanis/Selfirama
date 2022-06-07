@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfirama</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+
+</head>
+<body>
+  
+
+    <script src="script.js"></script>
+    <!--Pour importer des fichiers plutôt que d'utiliser la caméra (Pour que ca fonctionne décommenter aussi la ligne 12 dans le JS)-->
+    <!-- <input type="file" value="Choisir une image" id="uploadImage"> -->
+  <div id="logocont">
+  <img src="logo.png" class="logo"></img>
+  </div>
+    <div class="buttoncont">
+    <button class="coolbutton" id="selfielolmdr" onclick="showcam()">Prendre un selfie!</button>
+      <button class="coolbutton" id="editpic" onclick="editpic()">Editer des photos</button>
+    <button class="badbutton" id="deleteahomgwhy" onclick="deletepic()">Supprimer des photos</button>
+    </div>
+    <div class="error hidden" id="error"></div>
+        <!--La galerie et la caméra sont présents tout le temps, mais l'un d'entre eux a toujours un display none our qu'on n'en voie qu'un à la fois-->
+    <div class="space" id="space">Chargement du stockage restant...</div>
+    <div id="gallery"></div>
+    <video id="camera" class="hidden" autoplay></video>
+    <div id="cameracontrols" class="cameracontrols hidden">Faites un grand sourire! <button class="coolbutton hidden" id="declencheur" onclick="takephoto()">Prendre la photo!</button></div>
+    
+</body>
+</html>

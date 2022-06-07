@@ -1,0 +1,21 @@
+{
+  "name": "Selfirama, des selfies n'importe où!",
+  "short_name": "Selfirama",
+  "description": "Avec Selfirama, prenez des selfies simplement, n'importe où et n'importe quand!",
+  "icons": [
+    {
+      "src": "logo-triangle.jpg",
+      "sizes": "190x114",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-triangle.jpg",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "theme_color": "black",
+  "background_color": "#4763A8"
+}
