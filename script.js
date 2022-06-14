@@ -201,6 +201,7 @@ async function savephoto() {
     document.getElementById("space").innerHTML =
       `${(estimate.usage / estimate.quota).toFixed(2)}% d'espace de stockage utilisé<br>(environ ${estimate.usage}/${estimate.quota})`;
   });
+  document.getElementById("cameracontrols").innerHTML = `Clic! C'est dans la boîte!`
   //Preview de la photo (Pour débug, ca ne marche même plus je crois)
   //document.getElementById("canvas").style.display="block"
   await new Promise(resolve => setTimeout(resolve, 2000));
